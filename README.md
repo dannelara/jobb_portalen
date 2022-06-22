@@ -1,3 +1,5 @@
+## Description
+This poject was created during my first year at linnaeus university, where I study my bachelor degree in computer science.
 
 ### What is jobb portalen? 
  Jobb portalen is the platform were students are put first. No longer will you have to compete with higher educated or older people with longer working experiences. Here you are the working power that companies need to get a fresh and yunger perspective.

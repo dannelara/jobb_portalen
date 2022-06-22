@@ -1,0 +1,802 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+body {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+  margin-bottom: 0;
+
+}
+input {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+  margin-bottom: 0;
+}
+#root {
+	position: relative;
+  min-height: 100vh;
+}
+
+
+button {
+	cursor: pointer;
+}
+
+
+.account-container {
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+	top: 80px;
+	background: #ffffff;
+	height: 100%;
+	padding-bottom: 50px;
+	min-height: 650px;
+}
+
+
+ .footer-main {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  top: 30px;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 250px;
+	min-height: 80px;
+  color: white;
+	background-color: #102c50;
+	
+} 
+.sub-containers {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/** login form style */
+
+.form-content-area {
+  box-sizing: content-box;
+  width: 100%;
+	position: relative;
+	top: 80px;
+	background: #ffffff;
+	height: 100vh auto;
+	min-height: 650px;
+}
+
+
+#login-form form {
+  background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+#login-form form i {
+	margin-left: -30px;
+	cursor: pointer;
+}
+#login-form form input {
+  background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 50%;
+}
+
+#login-form form input:focus {
+  outline: none;
+}
+
+
+#login-form form button {
+  margin-top: 50px;
+  border-radius: 10px;
+	border: 1px solid black;
+	background-color: #102c50;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+#login-form form button:focus {
+  outline: none;
+}
+
+#login-form form button:active {
+  transform: scale(0.95);
+}
+
+/* Login employer */
+
+.employer-sub-title {
+	box-sizing: content-box;
+	margin-left: 45%;
+	padding-top: 35px;
+}
+.employer-sub-title > span {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+
+
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+	
+}
+
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	margin-top: 0px;
+  display: none;
+  position: absolute;
+  background-color: #102c50;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 11000;
+
+	
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+	color: white;
+
+	transition: transform 80ms ease-in;
+}
+
+/* Add a #0b213b background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: white;
+	color: black;
+
+  
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn > span {
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: black;
+}
+
+.drop-down-list {
+	margin-left: -55px;
+	display: flex;
+	max-width: 100%;
+	max-height: 82px;
+}
+
+/* TEEEST ACTION DROPDWON*/
+
+.dropdown-actions {
+  overflow: hidden;
+
+}
+
+/* Dropdown button */
+.dropdown-actions .dropbtn-actions {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+	
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content-actions  {
+	margin-top: 0px;
+  display: none;
+  position: absolute;
+  background-color: #102c50;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 11000;
+  
+	
+}
+
+/* Links inside the dropdown */
+.dropdown-content-actions  a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+	color: white;
+
+	transition: transform 80ms ease-in;
+}
+
+/* Add a #0b213b background color to dropdown links on hover */
+.dropdown-content-actions  a:hover {
+  background-color: white;
+	color: black;
+	font-weight: 500px;
+  
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-actions:hover .dropdown-content-actions  {
+  display: block;
+}
+.dropbtn-actions  > span {
+	border-radius: 10px;
+	background-color: #102c50;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin: 0 -5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+}
+
+.drop-down-list-actions  {
+	margin-left: -55px;
+	display: flex;
+	max-width: 100%;
+	max-height: 82px;
+}
+/* .right-side-action-btns a {
+	border-radius: 20px;
+	background-color: #102c50;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px 17px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+} */
+
+#right-side-action-btns {
+	display: flex;
+	flex-direction: row;
+}
+ 
+.drop-down-btns button > span{
+	color: black;
+}
+
+.drop-down-btns {
+	padding-left: -10px;
+	max-width: 100%;
+	min-width: 10%;
+
+}
+/* .right-side-nav {
+
+} */
+
+ .logout-btn, .my-account-btn, .create-btn {
+	 
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #102c50;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 20px;
+  padding: 3px;
+	margin-top: 15px;
+}
+
+.login-btn:focus {
+	transform: scale(0.95);
+}
+
+.logged-in-actions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+/* images */
+.landing-page-main-img {
+	background-image: url('../img/test-main-img.jpg');
+	height: 400px;
+	z-index: -1;
+}
+.landing-page-main-img > span {
+	color: white;
+	display: flex;
+	position: absolute;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: auto;
+	font-size: 30px;
+	background-color: #102c50;
+	top: 75px;
+	min-width: 150px;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 25px;
+	box-shadow: rgb(160, 158, 158);
+}
+#main-img {
+	max-width: 100%;
+}
+
+
+/* Search menu bar */
+
+.search-menu-wraper {
+  overflow: visible;
+	padding-top: 25px;
+	height: 300px;
+	margin-bottom: 10px;
+	width: 100%;
+
+}
+
+.main-section {
+	height: 550px;
+}
+
+
+
+/* Account page styling*/
+
+.profile-info {
+   margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+		max-width: 85%;
+    vertical-align: baseline;
+    background: transparent;
+		width: 790px;
+    margin: 0 auto;
+	
+		
+}
+
+.profile-card {
+	  background-color: #fff;
+    overflow: hidden;
+		box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+		border-radius: 5px 5px 5px 5px;
+		margin-bottom: 35px;
+}
+.cover-background {
+	display: flex;
+	width: 100%;
+	height: 198px;
+	background-color: #102c50;
+	border-radius: 5px 5px 0 0;
+}
+.profile-info {
+	padding: 24px;
+  position: relative;
+
+	border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+	
+    /* background: transparent */
+}
+
+.profile-image {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	background-color: white;
+	height: 50px;
+	background: linear-gradient( 0deg, #102c50, #102c50 49%, white 49%, white 51%, white 51% );
+}
+.profile-image{
+	  outline: black;
+  	border: 2px solid #fff;
+	  margin: -90px 0 12px;
+	  width: 128px;
+    height: 128px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-clip: content-box;
+    border: 0px solid rgba(0,0,0,0);
+    border-radius: 49.9%;
+}
+.profile-info-sub {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile-info-sub-sub {
+	width: 50%;
+	
+}
+.profile-info-sub-sub span {
+	font-size: 20px;
+}
+
+.profile-info-sub-sub-right{
+	position: absolute;
+	right: 75px;
+}
+.sub-span {
+	font-size: 1.6rem;
+    line-height: 1.75;
+    font-weight: 300;
+    color: rgba(0,0,0,0.9);
+}
+/* 
+.profile-skills-section {
+	margin-top: 55px;
+	max-width: 100%;
+
+}
+.skill-list {
+	margin-top: 15px;
+	padding: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	border-radius: 5px 5px 5px 5px;
+	max-width: 100%;
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+}
+.sub-list ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+.profile-skills-section span {
+
+font-size: 20px;
+
+padding-bottom: 25px;
+}
+.skill-list ul {
+	list-style: none;
+} */
+
+.profile-about {
+	max-width: 100%;
+}
+
+.delete-account {
+	max-width: 100%;
+	right: 55px;
+	height: 100px;
+}
+.profile-about-text {
+	margin-top: 15px;
+	padding: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	border-radius: 5px 5px 5px 5px;
+	max-width: 100%;
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+
+}
+.profile-about span {
+	font-size: 20px;
+	padding-bottom: 25px;
+	}
+
+	.about-span-profile {
+		font-size: 16px!important;
+	}
+
+	#flasMsg {
+		margin-top: 666px;
+		text-align: center;
+		font-size: 25px;
+		color: blue;
+	}
+#validation-summary ul {
+	text-align: center;
+list-style: none;
+color: #102c50;
+font-size: 20px;
+}
+
+
+
+#register-employer-btn {
+	color:#102c50;
+}
+
+.register-labels {
+	margin-left: -680px;
+	font-weight: 700;
+}
+
+
+
+.form-container {
+	background-color: white;
+	margin-top: 25px;
+	max-width: 800px;
+	height: 600px, auto;
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+		border-radius: 5px 5px 5px 5px;
+		padding: 16px;
+		margin-bottom: 25px;
+}
+.form-container form {
+	gap: 50px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.form-top {
+	margin-left: 32%;
+	padding: 16px;
+	width: 100%;
+	height: 50px;
+	justify-content: left;
+	align-items: center;
+	justify-content: center;
+}
+.form-top > span {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.form-mid {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-mid > span {
+	font-size: 20px;
+	font-weight: 350;
+}
+
+
+
+.offer {
+	width: 100%;
+	gap: 10px;
+}
+
+.job-title {
+	width: 100%;
+	gap: 10px;
+}
+#job-title-input {
+	width: 96.5%;
+}
+
+#post-btn {
+	margin-left: 45%;
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #0b213b;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	border: none;
+}
+
+/* form text area*/
+
+#form-text {
+	background-color: rgb(233, 233, 233);
+	resize: none;
+	width: 98%;
+	height: auto;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+
+/*Register employer*/
+.register-employer-text {
+width: 100%;
+}
+
+
+.form-container form input {
+  background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 96.5%;
+}
+
+.form-container  form input:focus {
+  outline: none;
+}
+
+
+.form-container  form button {
+  margin-top: 25px;
+  border-radius: 10px;
+	border: 1px solid black;
+	background-color: #102c50;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	margin-left: 40%;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.alert alert-success{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+.form-container form button:focus {
+  outline: none;
+}
+
+.job-title
+/* job post page*/
+
+.content-container-jobs {
+	background-color: #F9F9F9;
+	display: flex;
+ width: 100%;
+ position: relative;
+ top: 80px;
+ min-height: 100vh;
+ 
+ padding-bottom: 50px;
+ justify-content: center;
+ align-items: center;
+}
+
+.jobs-container {
+	margin-top: 50px;
+  width: 100%;
+	height: 100%;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.job-card {
+	min-width: 150px;
+	position: relative;
+	border-radius: 10px;
+	flex-basis: 33.33333333%;
+  max-width: 20%;
+	height: 350px;
+	max-height: 350px;
+	box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%)
+}
+.job-figure {
+	border-radius: 5px 5px 0px 0px;
+	  background-color: #0b213b;
+	  display: block;
+		width: 100%;
+}
+
+.job-post-a {
+	border-radius: 10px;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+.card-body {
+	height: 57%;
+	text-align: left;
+	max-width: 100%;
+	hyphens: none;
+	align-self: center;
+  padding: 10px;
+	background-color: white;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.job-time-stamp {
+	padding: 10px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.not-filled-span {
+	font-size: 15px!important;
+	color: gray;
+	text-decoration: underline rgb(160, 158, 158) solid;
+}
+
+.edit-profile-link {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: flex-end;
+	gap: 10px;
+	position: absolute;
+	right: 55px;
+	top: 45px;
+}
+
+.edit-profile-link > li {
+	list-style: none;
+}
+.edit-profile-link li a{
+   text-decoration: none;
+	 font-size: 20px;
+	 border: 1px solid black;
+	 color: black;
+	 background-color: #fbfcfd;
+	 border-radius: 10px;
+	 padding: 5px;
+	 border: none;
+}
+#validation-summary {
+	background-color: rgba(199, 136, 142, 0.699);
+	border-radius: 10px;
+	margin-bottom: 15px;
+}

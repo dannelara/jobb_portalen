@@ -1,0 +1,17 @@
+<div class="main-container">
+{{>flash}}
+<div class="form-container">
+	{{>validationSummary}}
+<form method="POST" action="./login-student">
+	<div class="login-header">
+    <span>Login in as a student</span>
+  </div>
+			<input type="email" name="email" autofocus="autofocus" placeholder="Email" minlength="5" autocomplete="off" required />
+			<div class="password-container">
+				<input class="password" type="password" name="password" placeholder="Password" minlength="6" autocomplete="off" required/>
+			<i class="far fa-eye" id="togglePassword"></i>
+			</div>
+<button>Login</button>
+</form>
+</div>
+</div>

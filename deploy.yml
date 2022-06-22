@@ -1,0 +1,6 @@
+deploy-prod:
+  stage: deploy
+  script:
+  - sudo cp -R ./* /var/www/job-portalen
+  only:
+  - master

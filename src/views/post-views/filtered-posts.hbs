@@ -1,0 +1,25 @@
+<div class="main-container">
+
+  <div class="jobs-container">
+   {{#if posts.length}}
+   {{#each posts}}
+ <div class="job-card">
+      <a class="job-post-a" href="./jobs/{{this.id}}">
+      <figure class="job-figure">
+        <img class="profile-image-post" src="{{this.img}}" alt="company profile image">
+      </figure>
+      <div class="card-body">
+        <h3>{{this.title}}</h3>
+        <p>{{this.offer}}</p>
+        <span class="job-time-stamp">{{this.createdAt}}</span>
+      </div>
+      </a>
+    </div>
+    {{/each}}
+    {{else}}
+    <div class="no-posts-container">
+      <span>Sorry, we did not find any results for your search</span>
+    </div>
+   {{/if}}
+  </div>
+</div>

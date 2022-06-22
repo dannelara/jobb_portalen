@@ -1,0 +1,31 @@
+<div class="main-container">
+  <div class="form-container">
+    {{>validationSummary}}
+    <form method="post" action="./delete-account/{{accountData.account.id}}">
+    <div class="form-top-delete">
+      <span>This action is not reversible.</span>
+      <br>
+      <span>Your account data will be deleted from our database.</span>
+    </div>
+    <div class="form-mid-delete">
+    <div class="delete-input">
+      <span>Please enter email:</span>
+      <input type="text" name="email" placeholder="Email" minlength="5" autocomplete="off" required />
+      <span>Please enter password:</span>
+		<div class="password-container">
+				<input class="password" type="password" name="password" placeholder="Password" minlength="6" autocomplete="off" required/>
+			<i class="far fa-eye" id="togglePassword"></i>
+			</div>
+    </div>
+  </div>
+  <div class="delete-account-btns">
+    <button id="confirm-delete">Confirm</button>
+    <div class="second-cofirm-container">
+      <span>Are you sure you want to go forward with this action?</span>
+      <button id="second-confirm-delete">Delete</button>
+    </div>
+  </div>
+    </form>
+  </div>
+  
+</div>

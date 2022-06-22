@@ -1,0 +1,85 @@
+
+<header>
+  <div class="logo">
+    <a href="/"><img class="logo-img" src="./img/logo.png" alt="logo"></a>
+  </div>
+
+  <div class="header-links">
+    <div class="dropdown">
+     <button class="dropbtn">
+        <span>About<span>&#9660;</span></span>
+
+    </button>
+    <div class="dropdown-content">
+      <a href="./about">About us</a>
+      <a href="./contact">Contact</a>
+    </div>
+  </div>
+  <div class="dropdown">
+      <button class="dropbtn">
+        <span>Students<span>&#9660;</span>
+</button>
+    <div class="dropdown-content">
+      <a href="#">coming soon</a>
+      <a href="#">coming soon</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <span>Empoyers<span>&#9660;</span></span>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">coming soon</a>
+      <a href="#">coming soon</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <span>Jobs<span>&#9660;</span></span>
+
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./jobs">All jobs</a>
+      <a href="#">coming soon</a>
+    </div>
+    </div>
+    
+  </div>
+  
+<div class="right-side-nav" >
+
+          {{#if accountData.account}}
+          <div class="logged-in-actions">
+          {{#if accountData.account.permissionLevel}}
+             <a class="create-btn" href="./new">Create new job a post</a> 
+          {{/if}}
+           <a class="my-account-btn" href="./account">Profile</a>
+           <a class="logout-btn" href="./logout">Logout</a>
+          </div>
+           {{else}}
+<div id="right-side-action-btns">
+   <div class="dropdown-actions">
+    <button class="dropbtn-actions">
+      <span class="drop-actions-span">Login<span>&#9660;</span></span>
+
+    </button>
+    <div class="dropdown-content-actions">
+      <a href="./student-login">Students</a>
+      <a href="./employer-login">Employers</a>
+    </div>
+    </div>
+      <div class="dropdown-actions">
+    <button class="dropbtn-actions">
+      <span class="drop-actions-span">Register<span>&#9660;</span></i></span>
+
+    </button>
+    <div class="dropdown-content-actions">
+      <a href="./register-student">Students</a>
+      <a href="./register-employer">Employers</a>
+    </div>
+    </div> 
+           </div>
+           {{/if}}
+</header>
+ 

@@ -1,0 +1,35 @@
+<div class="main-container">
+<div class="form-container">
+  	{{>validationSummary}}
+<form method="POST" action="./register-student">
+     <span>Name:</span>
+      <input type="text" autofocus="autofocus" id="name" name="name" placeholder="Name" minlength="1" autocomplete="off" required />
+			<span>Last name:</span>
+      <input type="text" name="lastname" placeholder="Last name" minlength="1" autocomplete="off" required />
+			<span>Title:</span>
+      <input type="text" name="title" placeholder="Title (eg. student, unemployed)" autocomplete="off" required>
+			<span>Email: OBS! This email will only be public to companies you give access to your profile</span>
+      <input type="text" name="email" placeholder="Email" minlength="5" autocomplete="off" required />
+			<span>Password:</span>
+			<div class="password-container">
+				<input class="password" type="password" name="password" placeholder="Password" minlength="6" autocomplete="off" required/>
+			<i class="far fa-eye" id="togglePassword"></i>
+			</div>
+<button>Register</button>
+</form>
+</div>
+ <div class="personal-information-info">
+	<div class="personal-information-info-sub-top">
+		<span>How we handle your personal information: </span>
+	</div>
+	<div class="personal-information-info-sub">
+		<ul>
+			<li>- Only autorized companies will have access to your profile</li>
+			<li>- You need to apply to a job in order for the company to see your profile</li>
+			<li>- If you remove your application from a job, the company will no longer have access to your profile</li>
+			<li>- If you wish to delete your account, all the data connected to it will be deleted.</li>
+			<li class="warning-obs">OBS! Deleting your account is not reversible.</li>
+		</ul>
+	</div>
+</div>
+</div>

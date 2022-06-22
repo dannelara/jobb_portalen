@@ -1,0 +1,69 @@
+<div class="main-container">
+  <div class="post-content-container">
+    {{#if post}} 
+    <div class="content-header">
+      <div class="post-delete-container">
+      <a id="delete-ref-post" href="./private-posts/delete/{{post.id}}">Delete</a>
+    </div>
+      <div class="profile">
+        <img class="profile-image-post" src="{{post.img}}" alt="company profile image">
+      </div>
+      <div class="content-name">
+        <span>{{post.companyName}}</span>
+      </div>
+      <div class="applicants-count">
+        <span>Applicants: {{post.applicants.length}}</span>
+      </div>
+    </div> 
+    <div class="content-body">
+      <div class="content-body-sub">
+        <span>Job position:</span>
+        <span class="sub-span">{{post.title}}</span>
+      </div>
+      <div class="content-body-sub">
+        <span>Job description:</span>
+        <span class="sub-span">{{post.description}}</span>
+      </div>
+      <div class="content-body-sub">
+        <span>What we want:</span>
+        <span class="sub-span">{{post.requirements}}</span>
+      </div>
+      <div class="content-body-sub">
+        <span>What we offer:</span>
+        <span class="sub-span">{{post.offer}}</span>
+      </div>
+    </div>
+     <div class="content-body-about">
+      <div class="content-body-sub">
+        <span>About us:</span>
+        <span class="sub-span">{{post.about}}</span>
+      </div>
+</div>
+  {{/if}}
+  </div>
+
+  <div class="applicants-container">
+   {{#if applicants.length}}
+ <div><span>Applicants: </span></div>
+    <br>
+    {{#if applicants}}
+    {{#each applicants}}
+    <div class="applicant-container">
+      <div class="applicant-left">
+      <div class="img-conatiner">
+        <img class="profile-image-applicant" src="{{this.img}}" alt="profile-image">
+      </div>
+      <div class="info-applicant">
+        <div><span>{{this.name}} {{this.lastname}}</span></div>
+        <div><span>{{this.title}}</span></div>
+      </div>
+    </div>
+    <div class="applicant-right">
+      <span><a href="./applicant/{{this.id}}?post={{../post.id}}">Profile</a></span>
+    </div>
+    </div>
+    {{/each}}
+    {{/if}} 
+  {{/if}}
+  </div>
+</div>

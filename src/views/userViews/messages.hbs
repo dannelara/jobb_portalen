@@ -1,0 +1,20 @@
+<div class="main-container">
+  {{>flash}}
+  <div class="messages-container">
+    <div class="messages">
+      <span class="message-span-header">Conversation log with: {{#if participantInfo.companyName}}{{participantInfo.companyName}}{{else}}{{participantInfo.name}}{{/if}}</span>
+      <div class="messages-messages">
+        {{#if chat.messages}}
+        <ul class="messages-list">
+        {{#each chat.messages}}
+        <div class="messages-{{#if this.own}}self{{else}}theirs{{/if}}">{{#if this.own}}Me: {{this.message}}{{else}}{{this.message}}{{/if}}</div>
+        {{/each}}
+        </ul>
+        {{/if}}
+      </div>
+      <div class="messages-btn-container">
+      <button id="send-message-btn" type="button" value="{{chat.id}}">New message</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+image: gitlab.lnu.se:5050/1dv025/pipelines/docker-images
+
+include: 
+  - 'build.yml'
+  - 'lint.yml'
+  - 'deploy.yml'
+stages:
+   - build
+   - lint
+   - deploy

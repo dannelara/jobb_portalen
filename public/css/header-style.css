@@ -1,0 +1,32 @@
+header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  height: 50px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+}
+ .logo {
+  width: 150px;
+  float: left;
+ }
+ .logo img {
+   position: absolute;
+   width: 80px;
+   top: 0px;
+   left: 0px;
+ }
+
+ .header-links {
+   margin-left: 55px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   float: left;
+ }
+
+ .right-side-nav {
+  margin-right: 55px; 
+  float: right;
+ }

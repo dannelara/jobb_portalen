@@ -1,0 +1,36 @@
+<div class="main-container">
+<div class="form-container">
+ {{>validationSummary}}
+<form action="./new" method="POST">
+  <div class="form-top">
+    <span>Lets create a new job post!</span>
+  </div>
+   <div class="form-mid-post">
+    <span>Job title: </span>
+    <div class="job-title">
+      <input id="job-title-input" type="text" name="title" placeholder="job title" autocomplete="off" required>
+    </div>
+  </div>
+  <div class="form-mid-post">
+    <span>Description: </span>
+    <div class="descriptions">
+      <textarea name="description" id="form-text" cols="60" rows="10" required spellcheck="false"></textarea>
+    </div>
+  </div>
+ 
+  <div class="form-mid-post">
+    <span>What we offer:</span>
+   <div class="offer">
+      <textarea name="offer" id="form-text" cols="60" rows="10" required  spellcheck="false"></textarea>
+    </div>
+  </div>
+  <div class="form-mid-post">
+     <span>Requirements:</span>
+<div class="requirements">
+      <textarea name="requirements" id="form-text" cols="60" rows="10" required  spellcheck="false"></textarea>
+    </div>
+  </div>
+  <button id="post-btn">Submit</button>
+</form>
+</div>
+</div>

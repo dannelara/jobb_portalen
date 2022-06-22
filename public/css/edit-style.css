@@ -1,0 +1,468 @@
+.hidden {
+	display: none;
+}
+.main-container {
+
+background-color: #f3f2ef;
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ position: relative;
+ top: 70px;
+ min-height: 100vh;
+ padding-bottom: 150px;
+ justify-content: center;
+ align-items: center;
+}
+section > div{
+	background-color: white;
+}
+.edit-profile-form-container {
+	background-color: white;
+	margin-top: 25px;
+	width: 800px;
+	height: 600px, auto;
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+		border-radius: 5px 5px 5px 5px;
+		padding: 16px;
+		margin-bottom: 25px;
+}
+.edit-profile-form-container form {
+  gap: 50px;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.form-top-edit {
+  width: 100%;
+  
+}
+.form-top-edit input {
+  width: 100%;
+}
+.form-mid-edit{
+  width: 100%;
+	gap: 10px;
+}
+.edit-profile-form-container form input {
+  background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 96.5%;
+}
+
+.edit-profile-form-container  form input:focus {
+  outline: none;
+}
+textarea {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+  margin-bottom: 0;
+  background-color: rgb(233, 233, 233);
+	resize: none;
+	width: 96.5%;
+	height: auto;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 15px;
+	text-align: left!important;
+	padding: 10px;
+}
+
+input {
+	border-radius: 10px;
+}
+.form-middle-edit {
+	
+  width: 100%;
+}
+
+#delete-ref {
+	position: absolute;
+	right: 10px;
+	padding: 15px;
+	list-style: none;
+	text-decoration: none;
+	color: red;
+}
+
+.delete-input {
+	max-width: 96.5%;
+}
+.form-top-delete {
+	max-width: 96.5%;
+}
+.form-top-delete > span{
+	font-size: 20px;
+	color: red;
+}
+.delete-account-btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#second-confirm-delete {
+	background-color: red!important;
+	border: none;
+}
+
+.second-cofirm-container {
+display: none;
+justify-content: center;
+align-items: center;
+}
+.second-cofirm-container span {
+	position: absolute;
+	left: 400px;
+}
+.password { 
+	width: 100%!important;
+}
+.password-container {
+	width: 100%;
+	display: flex;
+}
+.password-container input {
+	width: 96.5%!important;
+}
+.password-container i{
+display: block;
+width: 10px;
+margin-top: 20px;
+margin-left: -30px;
+}
+.delete-input {
+	min-width: 100%!important;
+}
+.delete-input > input{
+	min-width: 96.5%!important;
+}
+
+#file-ip-1-preview {
+width: 100%;
+height: 100%;
+border-radius: 49.9%;
+}
+
+.image-preview-container {
+	width: 150px;
+	height: 130px;
+	border-radius: 25px;
+}
+/* .imgRemove{
+	position: relative;
+	bottom: 114px;
+	left: 68%;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	outline: none;
+} */
+
+.imgRemove {
+	background: transparent;
+	border: none;
+	width: 25px;
+	font-size: 20px;
+	transition: 800ms;
+}
+.imgRemove:focus {
+	outline: none;
+}
+
+.form-input {
+	display: flex;
+	gap: 55px;
+}
+
+#img-data {
+	visibility: hidden!important;
+}
+.file-input {
+	max-height: 50px;
+}
+
+
+.validation-message-success {
+	font-size: 20px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	padding: 10px;
+	position: fixed;
+	z-index: 2000;
+	bottom: 100px;
+	right: 25px;
+	height: 100px, auto;
+	width: 250px;
+	background-color: rgba(185, 216, 228, 0.904);
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+	border-radius: 10px;
+	color: black;
+}
+
+.validation-message-error {
+	font-size: 20px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	padding: 10px;
+	position: fixed;
+	z-index: 2000;
+	bottom: 100px;
+	right: 25px;
+	height: 100px, auto;
+	width: 250px;
+	background-color: rgba(228, 185, 185, 0.904);
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+	border-radius: 10px;
+	color: black;
+}
+
+
+.profile-section {
+	padding: 15px;
+	margin-top: 10px;
+	min-height: 250px;
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+	border-radius: 10px;
+}
+.profile-sub {
+	display: flex;
+	padding: 10px;
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 0px 1px 0px rgb(0 0 0 / 6%);
+  height: 120px;
+
+}
+.sub-div-sub {
+	display: flex;
+	width: 50%;
+	padding: 10px;
+}
+.sub-div-sub-left {
+	width: 50%;
+	box-shadow: 1px 0px 0px rgb(0 0 0 / 8%);
+}
+.profile-header span {
+	font-size: 20px;
+}
+.profile-header {
+	margin-top: 15px;
+	background-color: #f3f2ef;;
+}
+.sub-header {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.sub-spans {
+	font-weight: 300;
+}
+.add-new-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	right: 35px;
+}
+
+
+.add-new-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	color: black;
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.add-new-link a {
+	width: 55px;
+}
+
+.add-new-form-sub {
+	width: 100%;
+}
+
+.add-new-form-sub-year {
+	width: 100%;
+}
+.add-new-form-sub-current{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.experience-header {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.experience-spans {
+	font-size: 1rem!important;
+	font-weight: 300!important;
+	color: rgb(107, 106, 106);
+}
+#current-job {
+width: 25px;
+height: 30px;
+margin-left: 75%;
+}
+
+.sub-div-experiences {
+	display: flex;
+}
+
+.remove-experience-btns {
+	outline: none;
+	border: none;
+	width: 20px;
+	font-size: 15px;
+	background-color: #FFFFFF;
+	color: red;
+}
+
+.remove-education-btns {
+	outline: none;
+	border: none;
+	width: 20px;
+	font-size: 15px;
+	background-color: #FFFFFF;
+	color: red;
+}
+ .sub-div-left{
+  width: 95%;
+}
+.sub-div-left > span {
+	max-width: 100%;
+}
+.sub-div {
+	display: flex;
+	align-items: flex-end;
+}
+.delete-form-container {
+	height: 300px;
+	z-index: 2000;
+	background-color: white;
+	margin-top: 25px;
+	width: 800px;
+	height: 600px, auto;
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+		border-radius: 5px 5px 5px 5px;
+		padding: 16px;
+}
+
+.delete-form-container form {
+		gap: 50px;
+		box-sizing: border-box;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+}
+
+.form-outer-container {
+	  display: flex;
+		align-items: center;
+		justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    min-height: 100vh;
+	  z-index: 1500;
+	  background-color: rgba(44, 41, 41, 0.699);;
+}
+
+#delete-btn {
+	margin-top: 25px;
+  border-radius: 10px;
+	border: 1px solid black;
+	background-color: #102c50;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	margin-left: 0;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+.close-form-btn {
+	cursor: pointer;
+	background-color: #FFFFFF;
+	border: none;
+	outline: none;
+	display: flex;
+	right: 0px;
+	top: 10px;
+
+}
+
+.delete-experience-form {
+	background-color: white;
+	margin-top: 25px;
+	width: 500px;
+	height: 200px;
+	box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+		border-radius: 5px 5px 5px 5px;
+		padding: 16px;
+		margin-bottom: 25px;
+}
+
+.delete-experience-form form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.info-div-form {
+	width: 100%;
+}
+#remove-application-job-btn {
+	background-color: red;
+}
+.form-mid-delete {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.profile {
+	width: auto;
+	display: flex;
+}
+
+.post-delete-container {
+	position: absolute;
+	right: 15px;
+}

@@ -1,0 +1,104 @@
+<div class="main-container">
+<div class="chat-link-container">
+  <a href="./private-chat/?participant={{profileData.id}}">Start a conversation</a>
+</div>
+  <section class="profile-info">
+   <section class="profile-card">
+     <figure class="cover-background">
+     </figure>
+     <div class="profile-info">
+       <div class="profile">
+         <img class="profile-image" src="{{#if profileData.img}} {{profileData.img}}{{else}}./img/profile-default.png{{/if}}" alt="image">
+      </div>
+       <div class="profile-info-sub">
+         <div class="profile-info-sub-sub">
+           {{#if profileData}}
+           <span>{{profileData.name}} {{profileData.lastname}}
+           </span>
+              <div >
+                 <span class="sub-span">{{profileData.title}}
+                 </span>
+               </div>
+               {{/if}}
+               
+         </div>
+          <div class="profile-info-sub-sub-right">
+           <span>Contact:</span>
+           <span>{{profileData.email}}</span>
+         </div> 
+       </div>    
+     </div>
+   </section>
+
+    <section class="profile-about">
+     <span>About</span>
+     <div class="profile-about-text">
+       {{#if profileData.about}}
+       <span class="about-span-profile">{{profileData.about}}</span>
+       {{else}}
+       <span class="not-filled-span">Section has not been filled yet.</span>
+     {{/if}}
+     </div>
+   </section>
+
+  {{#if profileData.permissionLevel}}
+
+  {{else}}
+  <div class="profile-header">
+    <span>Education</span>
+  </div>
+   <section >
+    <div class="profile-section">
+   {{#if profileData.educations}}
+   {{#each profileData.educations}}
+   <div class="profile-sub">
+       <div class="sub-div-sub-left">
+         <h3 class="sub-header">{{this.name}}</h3>
+       <span class="sub-spans">{{this.degree}}</span>
+       <br>
+       <span class="sub-spans">{{this.years}}</span>
+       </div>
+       <div class="sub-div-sub">
+        <div class="sub-div-left">
+           <span >{{this.description}}</span>
+        </div>
+       </div>
+     </div>
+{{/each}}
+{{else}}
+       <span class="not-filled-span">Section has not been filled yet.</span>
+   {{/if}}
+    </div>
+
+  <div class="profile-header">
+    <span>Experiences</span>
+  </div>
+   <section >
+    <div class="profile-section">
+   {{#if profileData.experiences}}
+   {{#each profileData.experiences}}
+     <div class="profile-sub">
+       <div class="sub-div-sub-left">
+         <h3 class="sub-header">{{this.name}}</h3>
+       <span class="sub-spans">{{this.title}}</span>
+       <br>
+       <span class="sub-spans">{{this.years}}</span>
+       </div>
+       <div class="sub-div-sub">
+        <div class="sub-div-left">
+           <span >{{this.description}}</span>
+        </div>
+       </div>
+     </div>
+{{/each}}
+{{else}}
+       <span class="not-filled-span">Section has not been filled yet.</span>
+   {{/if}}
+    </div>
+  </section>
+  {{/if}}
+  </section>
+
+
+</div>
+

@@ -1,0 +1,31 @@
+<div class="main-container">
+
+<div class="form-container">
+	{{>validationSummary}}
+<form method="POST" action="./education/new">
+	<div class="new-header">
+    <span>Lets add a new education</span>
+  </div>
+			<div class="add-new-form-sub">
+        <label for="form-name">School name</label>
+        <input id="form-name" type="text" name="name"  minlength="2" autocomplete="off" required />
+      </div>
+      <div class="add-new-form-sub">
+        <label for="form-title">Degree</label>
+        <input id="form-title" type="text" name="degree"  minlength="2" autocomplete="off" required />
+      </div>
+      <div class="add-new-form-sub-year">
+        <label for="start">Start year</label>
+        <input type="number" id="start" name="start" min="1950" max="2021" required>
+       <label for="end">End year</label>
+       <input type="number" id="end" name="end" min="1950" max="2050" required>
+      </div>
+       
+     <div class="add-new-form-sub">
+       <span>Write a short description: Max 200 letters.</span>
+       <textarea name="description" id="description" cols="10" rows="5" maxlength="200" style="resize:none;" required ></textarea>
+     </div>
+ <button id="post-btn">Save</button>
+</form>
+</div>
+</div>

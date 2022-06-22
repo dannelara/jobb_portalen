@@ -1,0 +1,21 @@
+variables:
+  LINT_RC: "https://gitlab.lnu.se/pipelines/stages/-/raw/master/lint/eslint/.eslintrc.json"
+
+
+################################################################
+#                     Development pipeline                     #
+# ------------------------------------------------------------ #
+# This pipeline will run for every new commit or MR except for #
+# MR:s to the release branch.                                  #
+################################################################
+Code linting:
+  stage: lint
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME != 'release'
+  before_script:
+    - npx install-peerdeps --dev @lnu/eslint-config
+  script:
+    - |
+      echo "Downloading rc-file from: $LINT_RC"
+      curl $LINT_RC > .eslintrc.json
+      npx eslint .

@@ -1,0 +1,142 @@
+<div class="main-container">
+{{>flash}}
+  <section class="profile-info">
+   <section class="profile-card">
+     <figure class="cover-background">
+ <div class="profile">
+    <div class="edit-profile-link">
+    <li>
+      <a href="./edit-profile">Edit profile</a>
+    </li>
+    {{#if (checkPermission accountData.account.permissionLevel)}}
+      <li><a href="./my-messages-company">Messages</a></li>
+      {{else}}
+       <li><a href="./my-messages-user">Messages</a></li>
+     {{/if}}
+     {{#if (checkPermission accountData.account.permissionLevel)}}
+     <li><a href="./private-posts">My job posts</a></li>
+     {{/if}}
+  </div>
+     </figure>
+     <div class="profile-info">
+       <div class="profile">
+         <img class="profile-image" src="{{#if accountData.account.img}} {{accountData.account.img}}{{else}}./img/profile-default.png{{/if}}" alt="image">
+      </div>
+       <div class="profile-info-sub">
+         <div class="profile-info-sub-sub">
+           {{#if (checkPermission accountData.account.permissionLevel)}}
+            <span>{{accountData.account.companyName}}
+           </span>
+              <div >
+                 <span class="sub-span">{{accountData.account.adress}}, {{accountData.account.city}}</span>
+               </div>
+           {{else}}
+           <span>{{accountData.account.name}} {{accountData.account.lastname}}
+           </span>
+              <div >
+                 <span class="sub-span">{{accountData.account.title}}
+                 </span>
+               </div>
+               {{/if}}
+               
+         </div>
+          <div class="profile-info-sub-sub-right">
+           <span>Contact:</span>
+           <span>{{accountData.account.email}}</span>
+         </div> 
+       </div>    
+     </div>
+   </section>
+
+    <section class="profile-about">
+     <span>About</span>
+     <div class="profile-about-text">
+       {{#if accountData.account.about}}
+       <span class="about-span-profile">{{accountData.account.about}}</span>
+       {{else}}
+       <span class="not-filled-span">Section has not been filled yet.</span>
+     {{/if}}
+     </div>
+   </section>
+
+
+  {{#if accountData.account.permissionLevel}}
+
+  {{else}}
+  <div class="profile-header">
+    <span>Education</span>
+  </div>
+   <section >
+    <div class="profile-section">
+       <div class="add-new-container"><a href="./education/new" class="add-new-link">&#x2B;</a></div>
+   {{#if accountData.account.educations}}
+   {{#each accountData.account.educations}}
+   <div class="profile-sub">
+       <div class="sub-div-sub-left">
+         <h3 class="sub-header">{{this.name}}</h3>
+       <span class="sub-spans">{{this.degree}}</span>
+       <br>
+       <span class="sub-spans">{{this.years}}</span>
+       </div>
+       <div class="sub-div-sub">
+        <div class="sub-div-left">
+           <span >{{this.description}}</span>
+        </div>
+         <div class="sub-div">
+           <button class="remove-education-btns" value="{{this.id}}">&#10006;</button>
+         </div>
+       </div>
+     </div>
+{{/each}}
+{{else}}
+       <span class="not-filled-span">Section has not been filled yet.</span>
+   {{/if}}
+    </div>
+  </section>
+  {{/if}}
+  {{#if accountData.account.permissionLevel}}
+
+  {{else}}
+  <div class="profile-header">
+    {{>flash}}
+    <span>Experiences</span>
+  </div>
+   <section>
+    <div class="profile-section">
+       <div class="add-new-container"><a href="./experience/new" class="add-new-link">&#x2B;</a></div>
+   {{#if accountData.account.experiences}}
+   {{#each accountData.account.experiences}}
+     <div class="profile-sub">
+       <div class="sub-div-sub-left">
+         <h3 class="sub-header">{{this.name}}</h3>
+       <span class="sub-spans">{{this.title}}</span>
+       <br>
+       <span class="sub-spans">{{this.years}}</span>
+       </div>
+       <div class="sub-div-sub">
+        <div class="sub-div-left">
+           <span >{{this.description}}</span>
+        </div>
+         <div class="sub-div">
+           <button class="remove-experience-btns" value="{{this.id}}">&#10006;</button>
+         </div>
+       </div>
+     </div>
+{{/each}}
+{{else}}
+       <span class="not-filled-span">Section has not been filled yet.</span>
+   {{/if}}
+    </div>
+  </section>
+  {{/if}}
+   <section class="delete-account">
+    <a id="delete-ref" href='./delete-account'>Delete account</a>
+  </section>
+  
+  
+   {{!}}
+  </section>
+
+
+</div>
+

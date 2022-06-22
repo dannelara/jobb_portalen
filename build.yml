@@ -1,0 +1,11 @@
+Install dependencies:
+  stage: build
+  # Make sure to run npm install if npm ci failes. (For older versions of npm etc.)
+  script:
+    - echo "Installing dependencies using npm ci."
+    - npm ci
+  # Rules must exist for build step to run in Mergerequest?!?
+  rules:
+  artifacts:
+    paths:
+      - node_modules/

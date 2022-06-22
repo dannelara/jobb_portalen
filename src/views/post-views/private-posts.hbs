@@ -1,0 +1,25 @@
+<div class="main-container">
+
+  <div class="jobs-container">
+   {{#if posts}}
+   {{#each posts}}
+ <div class="job-card">
+      <a class="job-post-a" href="./private-posts/{{this.id}}">
+      <figure class="job-figure">
+        <img class="profile-image-post" src="{{this.img}}" alt="company profile image">
+      </figure>
+      <div class="card-body">
+        <h3>{{this.title}}</h3>
+        <p>{{this.offer}}</p>
+        <span class="job-time-stamp">{{this.createdAt}}</span>
+      </div>
+      </a>
+    </div>
+    {{/each}}
+    {{else}}
+    <div class="no-content-container">
+      <span>You have not created any job posts yet. Create one <a href="./new">here</a></span>
+    </div>
+   {{/if}}
+  </div>
+</div>

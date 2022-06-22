@@ -1,0 +1,212 @@
+.messages-container {
+  display: block;
+  background-color: white;
+  width: 80%;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0px -10px 10px rgb(0 0 0 / 8%), 10px 0px 10px rgb(0 0 0 / 8%), -10px 0px 10px rgb(0 0 0 / 8%), 0px 10px 10px rgb(0 0 0 / 8%);
+}
+
+.messages {
+  box-shadow: 0px -5px 5px rgb(0 0 0 / 8%), 5px 0px 5px rgb(0 0 0 / 8%), -5px 0px 5px rgb(0 0 0 / 8%), 0px 5px 5 px rgb(0 0 0 / 8%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.messages-header {
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b213b;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.messages-messages {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+       overflow-y: scroll;
+       padding-left: 10px;
+       display:grid;
+       align-items:center;
+}
+
+.messages-btn-container {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+  height: 65px;
+}
+
+
+#send-message-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: auto;
+  height: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #0b213b;
+  color: #ffffff;
+}
+
+.new-message-form {
+  border-radius: 10px;
+  width: 650px;
+  height: 550px;
+  background-color: #ffffff;
+}
+
+.message-inner-container {
+  height: 100%;
+  width: 100%;
+}
+
+.new-message-form form {
+  height: 100%;
+  width: 100%;
+}
+
+.new-message-header {
+  height: 25px;
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.new-message-body {
+  padding: 10px;
+  height: 80%;
+}
+.send-message-container {
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.send-message-container button {
+  float: right;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #0b213b;
+  color: #ffffff;
+}
+
+.close-form-btn-messages {
+  float: right;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+ margin-right: 25px;
+}
+.uper-sub-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100px;
+}
+.uper-sub-div span {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+.text-container {
+  height: 300px;
+}
+.message-text-area {
+  height: 100%;
+  padding: 10px;
+}
+.messages-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 10px;
+  list-style-type: none;
+}
+.messages-self{
+  word-break: break-word;
+  margin-top: 5px;
+  width: 70%;
+  margin-top: 25px;
+  background-color: rgba(216, 231, 247, 0.699);
+  height: auto;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.messages-theirs {
+  word-break: break-word;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 5px;
+  width: 70%;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: rgba(204, 200, 253, 0.699);
+  height: auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+.chats-container {
+  margin-top: 15px;
+  height: 150px;
+  display: flex;
+  width: 600px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px -1px 1px rgb(0 0 0 / 8%), 1px 0px 1px rgb(0 0 0 / 8%), -1px 0px 1px rgb(0 0 0 / 8%), 0px 1px 1px rgb(0 0 0 / 8%);
+}
+.conversations-container {
+  height: auto;
+}
+
+.message-span-header {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.delet-conversation-btn {
+  text-decoration: none;
+  font-size: 20px;
+  color: red!important;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+}

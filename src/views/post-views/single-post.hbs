@@ -1,0 +1,57 @@
+
+<div class="main-container">
+  <div class="post-content-container">
+    {{#if post}} 
+    <div class="content-header">
+      <div class="profile">
+        <img class="profile-image-post" src="{{post.img}}" alt="company profile image">
+      </div>
+      <div class="content-name">
+        <span>{{post.companyName}}</span>
+      </div>
+    </div> 
+    <div class="content-body">
+      <div class="content-body-sub">
+        <span>Job position:</span>
+        <span class="sub-span">{{post.title}}</span>
+      </div>
+      <div class="content-body-sub">
+        <span>Job description:</span>
+        <span class="sub-span">{{post.description}}</span>
+      </div>
+      <div class="content-body-sub">
+        <span>What we want:</span>
+        <span class="sub-span">{{post.requirements}}</span>
+      </div>
+      <div class="content-body-sub">
+        <span>What we offer:</span>
+        <span class="sub-span">{{post.offer}}</span>
+      </div>
+    </div>
+ <div class="content-body-about">
+      <div class="content-body-sub">
+        <span>About us:</span>
+        <span class="sub-span">{{post.about}}</span>
+      </div>
+</div>
+  {{/if}}
+  {{#if accountData.account}}
+  {{#if accountData.account.permissionLevel}}
+  {{else}}
+  {{#if post.applied}}
+   <div class="apply-job-btn-container">
+        <button  id="remove-application-job-btn"  value="{{post.id}}">Remove my application</button>
+      </div>
+  {{else}}
+  <div class="apply-job-btn-container">
+        <button  id="apply-job-btn"  value="{{post.id}}">Apply to this job with your profile</button>
+      </div>
+      {{/if}}
+  {{/if}}
+      {{else}}
+      <div class="apply-job-btn-container">
+        <a href="./student-login"><span>Log in to apply</span></a>
+      </div>
+      {{/if}}
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.content-container {
+  margin-top: 50px;
+  width: 90%;
+  height: 800px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.content-section {
+  border-radius: 10px;
+
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 150px, auto;
+} 
+
+.header-span {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.content-section-header {
+ width: 100%;
+}
+.content-section-body {
+  padding: 10px;
+  box-shadow: 0px 1px 0px rgb(0 0 0 / 8%);
+ width: 100%;
+ height: auto;
+}

@@ -1,0 +1,54 @@
+<div class="main-container">
+  <div class="conversations-container">
+    
+
+  {{#if (checkPermission accountData.account.permissionLevel)}}
+   {{#if chats.length}}
+   {{#each chats}}
+   <div class="chats-container">
+      <div class="applicant-left">
+      <div class="img-conatiner">
+        <img class="profile-image-applicant" src="{{this.img}}" alt="profile-image">
+      </div>
+      <div class="info-applicant">
+        <div><span>{{this.name}} {{this.lastname}}</span></div>
+        <div><span>{{this.title}}</span></div>
+      </div>
+    </div>
+    <div class="applicant-right">
+      <span><a href="./private-chat/?participant={{this.id}}">Open conversation</a></span>
+      <button class="delet-conversation-btn" value="{{this.chatId}}">✖</button>
+    </div>
+    </div>
+   {{/each}}
+    {{else}}
+   <div class="no-content-container">
+     <span>We couldn't find any messages.</span>
+   </div>
+   {{/if}} 
+   {{else}}
+    {{#if chats.length}}
+   {{#each chats}}
+   <div class="chats-container">
+      <div class="applicant-left">
+      <div class="img-conatiner">
+        <img class="profile-image-applicant" src="{{this.img}}" alt="profile-image">
+      </div>
+      <div class="info-applicant">
+        <div><span>{{this.companyName}}</span></div>
+      </div>
+    </div>
+    <div class="applicant-right">
+      <span><a href="./private-chat/?participant={{this.id}}">Open conversation</a></span>
+      <button class="delet-conversation-btn" value="{{this.chatId}}">✖</button>
+    </div>
+    </div>
+   {{/each}}
+   {{else}}
+   <div class="no-content-container">
+     <span>We couldn't find any messages.</span>
+   </div>
+  {{/if}}
+    {{/if}} 
+  </div>
+</div>

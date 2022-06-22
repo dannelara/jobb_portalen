@@ -1,0 +1,73 @@
+<div class="main-container">
+<div class="edit-profile-form-container">
+  	{{>validationSummary}}
+  {{#if (checkPermission accountData.account.permissionLevel)}}
+  <form method="POST" action="./edit-profile-employer/{{accountData.account.id}}">
+  <div class="form-top-edit">
+    <div class="image-upload-one">
+     <div class="center">
+       <div class="form-input">
+         <div class="image-preview-container">
+           <img  id="file-ip-1-preview" src="{{accountData.account.img}}" ;>
+         </div>
+       </div>
+       <div class="file-input">
+         <input type="file"  name="img_one" id="file-ip-1" accept="image/png, image/jpeg">
+          <input type="text" name="data" id="img-data">
+       </div>
+     </div>
+   </div>
+  </div>
+  <div class="form-top-edit">
+    <label for="name">Company name:</label>
+    <input type="text" id="name" name="name" value="{{accountData.account.companyName}}" minlength="1" autocomplete="off" required />
+     <label for="country">Country:</label>
+      <input type="text" id="country"  name="country" value="{{accountData.account.country}}" minlength="1" autocomplete="off" required />
+       <label for="adress">Adress:</label>
+      <input type="text" id="adress" name="adress" value="{{accountData.account.adress}}" autocomplete="off" required>
+       <label for="city">City:</label>
+      <input type="text" id="city" name="city" value="{{accountData.account.city}}" minlength="1" autocomplete="off" required />
+  </div>
+ <div class="form-middle-edit">
+    <span> About:</span>
+    <div class="about-text">
+       <textarea name="about" class="form-text-edit" cols="60" rows="10" required spellcheck="false"> {{#if accountData.account.about}}{{accountData.account.about}}{{else}}{{/if}}</textarea>
+    </div>
+  </div>
+ <button id="post-btn">Save</button>
+  </form>
+  {{else}}
+  <form method="POST" action="./edit-profile-user/{{accountData.account.id}}">
+  <div class="form-top-edit">
+    <div class="image-upload-one">
+     <div class="center">
+       <div class="form-input">
+         <div class="image-preview-container">
+           <img  id="file-ip-1-preview" src="{{#if accountData.account.img}} {{accountData.account.img}}{{else}}./img/profile-default.png{{/if}}" ;>
+         </div>
+       </div>
+       <div class="file-input">
+         <input type="file"  name="img_one" id="file-ip-1" accept="image/png, image/jpeg">
+         <input type="text" name="data" id="img-data">
+       </div>
+     </div>
+   </div>
+  </div>
+  <div class="form-top-edit">
+    <input type="text" name="name" id="name" value="{{accountData.account.name}}">
+    <input type="text" name="lastname" id="lastname" value="{{accountData.account.lastname}}">
+    <input type="text" name="title" id="title" value="{{accountData.account.title}}">
+  </div>
+  <div class="form-middle-edit">
+    <span> About:</span>
+    <div class="about-text">
+       <textarea name="about" class="form-text-edit" cols="60" rows="10" required spellcheck="false"> {{#if accountData.account.about}}{{accountData.account.about}}{{else}}{{/if}}</textarea>
+    </div>
+  </div>
+  <button id="post-btn">Save</button>
+  </form>
+  {{/if}}
+
+</div>
+
+</div>

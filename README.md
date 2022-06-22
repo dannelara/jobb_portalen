@@ -1,8 +1,8 @@
 
-### What is Student jobs? 
- Student jobs is the platform were students are put first. No longer will you have to compete with higher educated or older people with longer working experiences. Here you are the working power that companies need to get a fresh and yunger perspective.
+### What is jobb portalen? 
+ Jobb portalen is the platform were students are put first. No longer will you have to compete with higher educated or older people with longer working experiences. Here you are the working power that companies need to get a fresh and yunger perspective.
 
-### Why Student jobs?
+### Why Jobb portalen?
 The reason for this project is my dissatisfaction with what the job market looks like today.
 I've always been dissatisfied with how the process of applying for a job went
 and how unfair the process is for young jobseekers.

@@ -7,7 +7,7 @@ describe('Check login for users', () => {
   it('Login with correct credentains returns 200 status code.', async () => {
     const payLoad = {
       email: '11daniel@live.se',
-      password: 'Samsung2'
+      password: 'correctPassword'
     }
     const result = await loginPost(payLoad)
     expect(result.status).to.equal(200)
@@ -26,7 +26,7 @@ describe('Check login employers', () => {
   it('Login with correct credentains returns 200 status code.', async () => {
     const payLoad = {
       email: '11daniel@live.se',
-      password: 'Samsung2'
+      password: 'correctPassword'
     }
     const result = await loginPostEmployer(payLoad)
     expect(result.status).to.equal(200)
